@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de clima</title>
+    <link rel="stylesheet" href="assets/weather.css">
+</head>
+<body>
+    <section class="info">
+        <div class="main-info">
+            <div class="temp"></div>
+            <img src="img/cloud.png" class="climate-icon" alt="climate icon">
+        </div>
+        <div class="add-info">
+            <div class="moisture">
+                <img src="img/moisture.png" alt="moisture icon">
+                <div class="humidity"></div>
+            </div>
+            <div class="wind">
+                <img src="img/wind.png" alt="wind icon">
+                <div class="wind-speed"></div>
+            </div>
+        </div>
+    </section>
+    <section class="greater-than-x">
+        <p class="title2">Cidades com mais de <span class="reference-temp"></span></p>
+        <div class="city-list"></div>
+    </section>
+    <script src="assets/weather.js"></script>
+</body>
+</html>
