@@ -10,7 +10,7 @@ body{
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    gap: 80px;
+    gap: 50px;
     padding: 10vh 0 50px 0;
     background-image: url(../img/weather-app-bg.png);
     background-attachment: fixed;
@@ -18,15 +18,66 @@ body{
     background-size: cover;
 }
 
-.title2{
-    color: white;
-    font-weight: bold;
-    font-size: 2vw;
-}
-
 img{
     width: 9vw;
     height: 9vw;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    border-radius: 10px 0 0 10px;
+    width: 30px;
+    height: 30px;
+    background-color: field;
+}
+
+.search-icon.selected{
+    border-radius: 10px 0 0 0;
+}
+
+.search-tool{
+    display: flex;
+}
+
+#search-input{
+    border-style: none;
+    border-radius: 0 10px 10px 0;
+    width: 20vw;
+    height: 30px;
+}
+
+#search-input.selected{
+    border-radius: 0 10px 0 0;
+}
+
+.suggestions{
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 5px 0;
+    border-radius: 0 0 10px 10px;
+    list-style-type: none;
+    background-color: white;
+}
+
+.suggestions.selected{
+    display: block;
+}
+
+.search-item:hover{
+    background-color: gray;
+}
+
+.standart-city{
+    display: flex;
+    width: 15vw;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main-info{
@@ -67,13 +118,26 @@ img{
     color: white;
 }
 
+.greater-title{
+    color: white;
+    font-weight: bold;
+    font-size: 4vh;
+    
+}
+
 .greater-than-x{
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    min-width: 30vw;
+    width: 30vw;
     min-height: 30vw;
+    height: auto;
     background-color: rgb(43, 43, 43);
     color: white;
+}
+
+.city-list{
+    list-style-type: none;
+    padding: 0;
 }

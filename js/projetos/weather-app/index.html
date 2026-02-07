@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="assets/weather.css">
 </head>
 <body>
+    <div class="search-wrapper">
+        <div class="search-tool">
+            <img src="img/search.png" alt="search" class="search-icon">
+            <input type="search" name="searchInput" id="search-input" placeholder="pesquisar localidades" autocomplete="off">
+        </div>
+        <ul class="suggestions"></ul>
+    </div>
     <section class="info">
+        <div class="standart-city"></div>
         <div class="main-info">
             <div class="temp"></div>
             <img src="img/cloud.png" class="climate-icon" alt="climate icon">
@@ -24,8 +32,8 @@
         </div>
     </section>
     <section class="greater-than-x">
-        <p class="title2">Cidades com mais de <span class="reference-temp"></span></p>
-        <div class="city-list"></div>
+        <p class="greater-title">Cidades com mais de <span class="reference-temp"></span></p>
+        <ul class="city-list"></ul>
     </section>
     <script src="assets/weather.js"></script>
 </body>
