@@ -29,8 +29,7 @@ function weatherApp(){
     async function getWeather(city){
         try{
             //coloque sua key aqui! para cria-la, acesse openweathermap.org
-            //const apiKey = process.env.API_KEY;
-            const apiKey = '4b9d929503af7af2e14c5bdd0626e1a0';
+            const apiKey = process.env.API_KEY;
 
             let coords = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`);
             if(!coords){
